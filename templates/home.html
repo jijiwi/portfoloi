@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+</head>
+<body>
+    <h1>个人相册</h1>
+    <p>相册展示</p>
+    {% for g in gallery.all %}
+        {{ g.description }}
+    {% endfor %}
+
+</body>
+</html>
