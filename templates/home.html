@@ -6,10 +6,10 @@
 </head>
 <body>
     <h1>个人相册</h1>
-    <p>相册展示</p>
-    {% for g in gallery.all %}
-        {{ g.description }}
+    {% for gallery in gallerys.all %}
+        {{ gallery.description }}
+        <img src="{{ gallery.image.url }}">
     {% endfor %}
-{#    TODO: 图片前端展示#}
+
 </body>
 </html>

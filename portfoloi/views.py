@@ -4,4 +4,4 @@ from gallery.models import Gallery
 
 def home(response):
     gallerys = Gallery.objects
-    return render(response, 'home.html', {'gallery': gallerys})
+    return render(response, 'home.html', {'gallerys': gallerys})
